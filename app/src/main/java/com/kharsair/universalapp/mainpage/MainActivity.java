@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private MainActivityListviewFunctionPickerAdapter functionPickerListviewAdapter;
 
     private static final FunctionPickerMenuItemHolder[] functionPickerMenuItems = {
-            new FunctionPickerMenuItemHolder("Request Scheduler", RequestSchedulerMainActivity.class)
+            new FunctionPickerMenuItemHolder("Request Scheduler", RequestSchedulerMainActivity.class, null)
     };
 
     @Override

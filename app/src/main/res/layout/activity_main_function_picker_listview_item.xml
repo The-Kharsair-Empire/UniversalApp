@@ -2,31 +2,27 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="100dp"
-    android:background="@drawable/layout_border_1"
     android:paddingTop="5dp"
     android:paddingBottom="5dp"
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
     android:orientation="horizontal"
-    android:weightSum="1000">
+    android:weightSum="1000"
+    android:id="@+id/activity_main_function_picker_item_linear_layout_background">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="0dp"
-        android:layout_weight="750"
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="750">
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="0dp"
-            android:layout_weight="750"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textSize="30sp"
-            android:id="@+id/activity_main_function_picker_item_textview_function_name"
-            />
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-
+        android:background="@drawable/solid_background_1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/activity_main_function_picker_item_textview_function_name"
+        />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.kharsair.universalapp.databinding.ActivityMainBinding;
-import com.kharsair.universalapp.requestscheduler.RequestSchedulerMainActivity;
+import com.kharsair.universalapp.requestscheduler.RequestCreatorMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private MainActivityListviewFunctionPickerAdapter functionPickerListviewAdapter;
 
     private static final FunctionPickerMenuItemHolder[] functionPickerMenuItems = {
-            new FunctionPickerMenuItemHolder("Request Scheduler", RequestSchedulerMainActivity.class, null)
+            new FunctionPickerMenuItemHolder("Request Creator", RequestCreatorMainActivity.class, null)
     };
 
     @Override

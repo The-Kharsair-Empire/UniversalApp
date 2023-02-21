@@ -4,13 +4,14 @@ import android.Manifest;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.kharsair.universalapp.databinding.ActivityMainBinding;
-import com.kharsair.universalapp.requestscheduler.RequestCreatorMainActivity;
+import com.kharsair.universalapp.requestcreator.RequestCreatorMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void proceedAfterPermissionsGranted() {
         viewBinding.activityMainListviewAppFunctionPicker.setAdapter(functionPickerListviewAdapter);
+        viewBinding.activityMainListviewAppFunctionPicker.setLayoutManager(new LinearLayoutManager(this));
     }
 
 

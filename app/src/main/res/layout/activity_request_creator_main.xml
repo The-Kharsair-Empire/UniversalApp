@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".requestscheduler.RequestCreatorMainActivity">
+    tools:context=".requestcreator.RequestCreatorMainActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -12,13 +12,14 @@
         android:orientation="vertical"
         android:weightSum="1000">
 
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:layout_width=""-->
-<!--            android:layout_height=""-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/request_creator_existing_request_list_view"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <com.kharsair.universalapp.requestscheduler.RequestCreatorAddNewFloatingButton
+    <com.kharsair.universalapp.requestcreator.RequestCreatorAddNewFloatingButton
         android:id="@+id/request_creator_add_new_request_floating_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

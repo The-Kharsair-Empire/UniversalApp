@@ -1,4 +1,4 @@
-package com.kharsair.universalapp.requestscheduler;
+package com.kharsair.universalapp.shared;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class RequestCreatorAddNewFloatingButton extends FloatingActionButton implements View.OnTouchListener, View.OnClickListener {
+public class MovableFloatingActionButton extends FloatingActionButton implements View.OnTouchListener {
 
     private final static float CLICK_DRAG_TOLERANCE = 10;
     // Often, there will be a slight, unintentional, drag when the user taps the FAB, so we need to account for this.
@@ -20,31 +20,23 @@ public class RequestCreatorAddNewFloatingButton extends FloatingActionButton imp
     private float downRawX, downRawY;
     private float dX, dY;
 
-    private Context parentActivityContext;
-
-    public RequestCreatorAddNewFloatingButton(@NonNull Context context) {
+    public MovableFloatingActionButton(@NonNull Context context) {
         super(context);
+        init();
     }
 
-    public RequestCreatorAddNewFloatingButton(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public MovableFloatingActionButton(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        init();
     }
 
-    public RequestCreatorAddNewFloatingButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public MovableFloatingActionButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init();
     }
 
-    public void init(Context parentActivityContext) {
+    public void init() {
         setOnTouchListener(this);
-        setOnClickListener(this);
-        this.parentActivityContext = parentActivityContext;
-    }
-
-    @Override
-    public void onClick(View view) {
-        if (parentActivityContext != null)
-            Toast.makeText(parentActivityContext, "clicked", Toast.LENGTH_SHORT).show();
-
     }
 
     @Override

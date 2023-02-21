@@ -14,7 +14,7 @@
         android:theme="@style/Theme.UniversalApp"
         tools:targetApi="31" >
         <activity
-            android:name=".requestscheduler.RequestCreatorMainActivity"
+            android:name=".requestcreator.RequestCreatorMainActivity"
             android:exported="false" />
         <activity
             android:name=".mainpage.MainActivity"
